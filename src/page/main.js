@@ -1,0 +1,1 @@
+import "../blocks/gis-win/gis-win.scss";

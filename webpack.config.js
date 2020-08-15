@@ -12,14 +12,14 @@ const PATHS = {
 module.exports = {
   
   entry: {
-    main: './src/pages/main.js',
+    main: './src/page/main.js',
     },
  	  module: {
     rules: [
       {
         test: /\.s[ac]ss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
+          //MiniCssExtractPlugin.loader,
           'style-loader',
           'css-loader',
           'sass-loader',
@@ -40,7 +40,8 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]'
+          name: '[name].[ext]',
+          outputPath: 'assets/images'
         },
       },
       {
@@ -52,16 +53,11 @@ module.exports = {
   plugins: [	
      new HtmlWebpackPlugin({
        filename: 'index.html',
-       template: './src/page/landing/landing.pug'
+       template: './src/page/landing.pug'
      }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {from: `src/images`, to: `images`},
-      ],
     }),
   ],
   output: {
