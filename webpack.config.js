@@ -55,7 +55,7 @@ module.exports = {
        template: './src/page/landing.pug'
      }),
     new MiniCssExtractPlugin({
-      filename: '[contenthash].css',
+      filename: 'main.css',
       chunkFilename: '[id].css',
     }),
   ],
