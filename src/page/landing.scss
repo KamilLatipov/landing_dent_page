@@ -1,0 +1,26 @@
+.landing-page {
+
+}
+
+.landing-page__first-block {
+  padding: 0 0 40px;
+
+  background-image: url("images/dent.png"), url("images/first.png");
+  background-position: 380px -5px, -100px 0;
+  background-size: 1200px 800px, cover;
+  background-repeat: no-repeat;
+}
+
+.landing-page__second-block {
+  background-image: url("images/second.png"), url("images/table.png"),  url("images/second-background.png");
+  background-position: -160px -30px, 50% 100% ,0 0;
+  background-size: 1380px 800px, 100% 200px ,cover;
+  background-repeat: no-repeat;
+}
+
+.section-block {
+  width: 1140px;
+
+  margin: 0 auto;
+}
+

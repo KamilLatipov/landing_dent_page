@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const PATHS = {
@@ -18,9 +18,8 @@ module.exports = {
     rules: [
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          //MiniCssExtractPlugin.loader,
-          'style-loader',
+        loader: [
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
         ],
@@ -56,7 +55,7 @@ module.exports = {
        template: './src/page/landing.pug'
      }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[contenthash].css',
       chunkFilename: '[id].css',
     }),
   ],

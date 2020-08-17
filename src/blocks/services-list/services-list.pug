@@ -1,0 +1,6 @@
+mixin services-list(list)
+  ul.services-list
+    each item in list
+      li.services-list__item
+        .services-list__circle
+        p.services-list__text=item.text

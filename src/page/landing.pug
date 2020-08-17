@@ -1,9 +1,48 @@
 extends layout.pug
 
 include ../blocks/first-block/first-block
+include ../blocks/second-block/second-block
+include ../blocks/header/header
 
 block content
-    .main-page
-      .main-page__first-block
+    .landing-page
+      .landing-page__first-block.landing-page__block
+        +header
         +first-block
-      .main-page__second-block
+      .landing-page__second-block.landing-page__block
+        +second-block({
+          list: [
+            {
+              link: "",
+              text: "Терапия"
+            },
+            {
+              link: "",
+              text: "Хирургия"
+            },
+            {
+              link: "",
+              text: "Рентгено-даигностика"
+            },
+            {
+              link: "",
+              text: "Исправление прикуса"
+            },
+            {
+              link: "",
+              text: "Протезиро-вание"
+            },
+            {
+              link: "",
+              text: "Эстетическая стоматология"
+            },
+            {
+              link: "",
+              text: "Профилактика и гигена рта"
+            },
+            {
+              link: "",
+              text: "Имплантация"
+            },
+          ]
+        })

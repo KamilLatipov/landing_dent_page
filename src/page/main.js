@@ -1,1 +1,12 @@
 import "../blocks/gis-win/gis-win.scss";
+import "../scss/global.scss";
+import "../blocks/header/header.scss";
+import "../blocks/first-block/first-block.scss";
+import "./landing.scss";
+import "../blocks/form-block/form-block.scss";
+import "../blocks/second-block/second-block.scss";
+import "../blocks/services-list/services-list.scss";
+import "../fonts/GothamPro/styles.css";
+import "../fonts/GothamPro-Bold/styles.css";
+import "../fonts/GothamPro-Light/styles.css";
+import "../blocks/form-vertical/form-vertical.scss";

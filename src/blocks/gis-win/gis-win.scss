@@ -1,7 +1,73 @@
-.gis-win__text {
+.gis-win__text-block {
+  display: flex;
+  justify-content: center;
 
+  width: 250px;
+  height: 65px;
+
+  margin-left: 75px;
+
+  background-color: white;
+
+  border-radius: 10px;
 }
 
-.gis-win__logo {
-  background-image: url(images/gisicon.svg);
+.gis-win {
+  position: relative;
+}
+
+.gis-win__cup {
+  position: absolute;
+
+  top: -20px;
+  left: -10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 70px 0 rgba(189, 189, 189, 0.39);
+
+  z-index: 1;
+}
+
+.gis-win__circle {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 24px 0 rgba(189, 189, 189, 0.39);
+
+  background-image: url("images/cup1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.gis-win__text {
+  width: 105px;
+
+  padding-top: 10px;
+
+  text-align: start;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.gis-win__icon {
+  width: 110px;
+
+  background-image: url("images/gislogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85px 35px;
 }

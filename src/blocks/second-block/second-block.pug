@@ -1,0 +1,25 @@
+include ../services-list/services-list
+include ../form-vertical/form-vertical
+
+mixin second-block({list})
+  section.second-block.section-block
+    h2.second-block__title Помогаем открыть клинику с полным спектром <span class="green"> стоматологичских услуг </span>
+    .second-block__list
+      +services-list(list)
+    .second-block__statistics
+      .second-block__years
+        p.second-block__subtitle <span class="second-block__subtitle--number">6</span> лет
+        p.second-block__text наш опыт выстраивания бизнес-процессов в стоматологических клиниках
+      .second-block__average
+        .second-block__subtitle--number 14 000
+        .second-block__text среднее число пациентов в клинике за один год
+      .second-block__image
+        img(src=require("../blocks/second-block/images/tooth-background.png") width="510px" height="200px").second-block__tooth-background
+        img(src=require("../blocks/second-block/images/first-tooth.png") width="150px" height="215px").second-block__first-tooth
+        img(src=require("../blocks/second-block/images/second-tooth.png") width="270px" height="160px").second-block__second-tooth
+    .second-block__form
+      image(src=require("../blocks/second-block/images/mac.png") width="670px" height="550px").second-block__mac
+      +form-vertical(
+        "Получите план открытия стоматологической клиники по технологии «5/1»",
+        "Получить план открытия"
+      )

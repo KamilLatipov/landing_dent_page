@@ -1,0 +1,13 @@
+mixin form-vertical(title, buttonName, list)
+    .form-vertical
+        h3.form-vertical__title=title
+        if (list)
+            ul.form-vertical__list
+                each item in list
+                    li.form-vertical__item=item.text
+        form.form-vertical__form
+            input(type="text" placeholder="Иванов Иван").form-vertical__input
+            input(type="text" placeholder="+7 (___) ___-__-__").form-vertical__input.form-vertical__input--center
+            input(type="email" placeholder="example@mail.ru").form-vertical__input
+            button(type="submit").form-block__button.form-block__button--vertical=buttonName
+        p.form-vertical__policy Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых <span class="green green--underline">Политикой конфиденциальности</span>
