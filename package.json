@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "homepage": "https://kamillatipov.github.io/lending_dent_page",
+  "homepage": "https://kamillatipov.github.io/landing_dent_page",
   "scripts": {
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open --content-base",
