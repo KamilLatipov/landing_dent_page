@@ -10,11 +10,11 @@
 
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 11px 54px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 11px 54px 0 rgba(0, 0, 0, 0.2);
 }
 
 .form-vertical__title {
-  width: 332px;
+  width: 420px;
 
   font-size: 22px;
   font-weight: bold;
@@ -53,10 +53,9 @@
   align-items: center;
 
   width: 320px;
-  height: 220px;
+  height: 320px;
 
-  margin-bottom: 35px;
-  padding: 40px 0 80px;
+  padding: 40px 0 20px;
 
   border-radius: 10px;
 }
@@ -75,9 +74,35 @@
   border-radius: 10px;
 }
 
+.form-vertical__button {
+  height: 86px;
+  width: 318px;
+
+  text-align: center;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 0 rgba(53, 53, 53, 0.5);
+
+  border-radius: 45px;
+  border: none;
+  outline: none;
+  background-image: -moz-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  box-shadow: 0 3px 24px 0 rgba(250, 85, 91, 0.39);
+}
+
 .form-vertical__policy {
+  padding-bottom: 20px;
+
   font-size: 12px;
 
   text-align: center;
 }
 
+.form-vertical__textarea {
+  resize: none;
+}

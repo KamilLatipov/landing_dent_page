@@ -1,0 +1,52 @@
+include ../form-vertical/form-vertical
+
+mixin nineth-block
+  section.nineth-block.section-block
+    h2.nineth-block__title Вопрос-ответ
+    .nineth-block__main
+      ul.nineth-block__list
+        li.nineth-block__item
+          .nineth-block__circle
+            p.nineth-block__number 1
+          p.nineth-block__question Можно ли открыть клинику без медицинского образования?
+          input(type="radio" name="radio" id="first").nineth-block__checkbox
+          label(for="first")
+            i.fa.fa-angle-down.fa-lg
+            i.fa.fa-angle-up.fa-lg
+          p.nineth-block__hide fd
+        li.nineth-block__item
+          .nineth-block__circle
+            p.nineth-block__number 2
+          p.nineth-block__question Сколько инвестиций нужно для открытия?
+          input(type="radio" name="radio" id="second").nineth-block__checkbox
+          label(for="second")
+            i.fa.fa-angle-down.fa-lg
+            i.fa.fa-angle-up.fa-lg
+          p.nineth-block__hide fd
+        li.nineth-block__item
+          .nineth-block__circle
+            p.nineth-block__number 3
+          p.nineth-block__question Кто будет заниматься поддержкой моей клиники?
+          input(type="radio" name="radio" id="third").nineth-block__checkbox
+          label(for="third")
+            i.fa.fa-angle-down.fa-lg
+            i.fa.fa-angle-up.fa-lg
+          p.nineth-block__hide fd
+        li.nineth-block__item
+          .nineth-block__circle
+            p.nineth-block__number 4
+          p.nineth-block__question Сложно ли зарегистрировать клинику и получить разрешение на работу?
+          input(type="radio" name="radio" id="fourth" checked).nineth-block__checkbox
+          label(for="fourth")
+            i.fa.fa-angle-down.fa-lg
+            i.fa.fa-angle-up.fa-lg
+          p.nineth-block__hide По франшизе — нет. Мы сопровождаем <br> партнёров во время получения всех необходимых разрешений и лицензий. Спокойно и пошаговом режиме мы совместно получим необходимые документы, чобы ваша клиника быстрее начала работу.
+      .nineth-block__form
+        .nineth-block__form-block
+          form.nineth-block__frm
+            textarea(placeholder="Ваш вопрос" rows="4").form-vertical__input.form-vertical__textarea
+            input(type="text" placeholder="Иванов Иван").form-vertical__input
+            input(type="text" placeholder="+7 (___) ___-__-__").form-vertical__input.form-vertical__input--center
+            input(type="email" placeholder="example@mail.ru").form-vertical__input
+            button(type="submit").form-vertical__button Отправить
+          p.form-vertical__policy Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых <span class="green green--underline">Политикой конфиденциальности</span>

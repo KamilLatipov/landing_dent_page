@@ -1,0 +1,19 @@
+.tenth-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tenth-block__title {
+  padding: 40px 0;
+
+  width: 720px;
+
+  font-size: 38px;
+  text-align: center;
+  color: rgb(45, 45, 45);
+}
+
+.tenth-block__form {
+  padding-bottom: 120px;
+}

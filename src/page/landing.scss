@@ -1,5 +1,5 @@
 .landing-page {
-
+  min-width: 1140px;
 }
 
 .landing-page__first-block {
@@ -25,9 +25,35 @@
   background-repeat: no-repeat;
 }
 
+.landing-page__seventh-block {
+  background-image: url("images/seventh.png");
+  background-position: -50px -10px;
+  background-size: 1700px 800px;
+  background-repeat: no-repeat;
+}
+
+.landing-page__ninth-block {
+  background-image: url("images/ninth.png");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-page__tenth-block {
+  background-image: url("images/tenth.png");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .section-block {
   max-width: 1140px;
 
   margin: 0 auto;
+}
+
+.landing-page__footer {
+  display: flex;
+  justify-content: center;
 }
 

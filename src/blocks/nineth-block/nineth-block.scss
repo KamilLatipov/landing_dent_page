@@ -1,0 +1,148 @@
+.nineth-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 800px;
+}
+
+.nineth-block__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 680px;
+}
+
+.nineth-block__title {
+  font-size: 38px;
+
+
+  padding-bottom: 30px;
+}
+
+.nineth-block__main {
+  display: flex;
+  justify-content: space-between;
+
+  height: 800px;
+}
+
+.nineth-block__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+.nineth-block__show {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100px;
+}
+
+.nineth-block__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 34px;
+
+  margin-left: 20px;
+
+  border: 1px solid rgba(101, 38, 85, 0.749);
+  border-radius: 50%;
+}
+
+.nineth-block__number {
+  color: rgba(101, 38, 85, 0.749);
+}
+
+.nineth-block__question {
+  width: 440px;
+
+  margin: 30px 30px 30px 70px;
+
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nineth-block__hide {
+  display: none;
+
+  width: 420px;
+
+  margin-left: 130px;
+
+  padding-bottom: 30px;
+
+  line-height: 25px;
+}
+
+.fa-angle-up , .fa-angle-down {
+  width: 20px;
+  height: 20px;
+
+  color: rgba(101, 38, 85, 0.7);
+
+  cursor: pointer;
+}
+
+.fa-angle-up {
+  display: none;
+}
+
+.nineth-block__checkbox {
+  display: none;
+
+  &:checked ~ .nineth-block__hide {
+    display: block;
+  }
+  &:checked + label > .fa-angle-up {
+    display: block;
+  }
+
+  &:checked + label > .fa-angle-down {
+    display: none;
+  }
+}
+
+.nineth-block__form {
+  margin-left: 15px;
+}
+
+.nineth-block__form-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 620px;
+  width: 450px;
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 11px 54px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nineth-block__frm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 320px;
+  height: 460px;
+
+  margin-top: 40px;
+}

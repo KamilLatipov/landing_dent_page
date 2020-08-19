@@ -4,9 +4,19 @@
   flex-wrap: wrap;
   align-items: center;
 
-  width: 1350px;
+  max-width: 1350px;
 
   margin: 0 auto;
+
+  padding: 30px 0 65px 0;
+}
+
+.sixth-block__stories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: 100%;
 }
 
 .sixth-block__title {

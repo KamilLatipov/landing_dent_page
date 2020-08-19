@@ -1,0 +1,10 @@
+include ../form-block/form-block
+
+mixin tenth-block
+  section.tenth-block
+    h2.tenth-block__title Проверьте, свободен ли ваш город для <span class="green">работы по франшизе</span>
+    .tenth-block__form
+      +form-block(
+       'Заполните форму, чтобы проверить город',
+       'Проверить город'
+      )

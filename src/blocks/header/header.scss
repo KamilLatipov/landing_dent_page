@@ -1,7 +1,7 @@
 .header {
   max-width: 1140px;
 
-  margin: 0 auto ;
+  margin: 0 auto;
 
   font-size: 16px;
 }
@@ -17,7 +17,6 @@
 .header__name {
   width: 220px;
 
-  font-family: "GothamPro";
   color: #2d2d2d;
   text-transform: uppercase;
 }
@@ -42,5 +41,15 @@
 
   font-size: 16px;
   font-weight: lighter;
-  text-decoration: underline;
+
+  border-bottom: 0.5px solid black;
+}
+
+.header__call {
+  display: flex;
+  align-items: center;
+}
+
+.fa-phone {
+  color: #1c9494;
 }

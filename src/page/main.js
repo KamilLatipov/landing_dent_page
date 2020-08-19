@@ -18,6 +18,10 @@ import "../blocks/fifth-block/fifth-block.scss";
 import "../blocks/sixth-block/sixth-block.scss";
 import "../blocks/fourth-block/fourth-block.scss";
 import "../blocks/eighth-block/eighth-block.scss";
+import "../blocks/seventh-block/seventh-block.scss";
+import "../blocks/nineth-block/nineth-block.scss";
+import "../blocks/tenth-block/tenth-block.scss";
+import "../blocks/footer/footer.scss";
 
 
 function calculate(rangeId, inputId, check) {

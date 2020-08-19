@@ -1,0 +1,44 @@
+include ../form-vertical/form-vertical
+
+mixin seventh-block
+  section.seventh-block.section-block
+    h2.seventh-block__title Мы сделали открытие клиники <span class="green">простым</span>
+    .seventh-block__main
+      ul.seventh-block__list
+        li.seventh-block__item
+          .seventh-block__image-block
+            img(src=require("../blocks/seventh-block/images/1picture.png"))
+          p.seventh-block__list-title Оборудование для работы
+          p.seventh-block__text Помогаем с поставками и установкой, следим за лицензиями
+        li.seventh-block__item
+          .seventh-block__image-block
+            img(src=require("../blocks/seventh-block/images/2picture.png") height="230px").seventh-block__image
+          p.seventh-block__list-title Подготовка команды
+          p.seventh-block__text Помогаем подобрать специалистов, организовать и обучить их
+        li.seventh-block__item
+          .seventh-block__image-block
+            img(src=require("../blocks/seventh-block/images/3picture.png") height="230px").seventh-block__image
+          p.seventh-block__list-title Лицензии
+          p.seventh-block__text Консультируем при получении всех необходимых для работы лицензий
+        li.seventh-block__item
+          .seventh-block__image-block
+            img(src=require("../blocks/seventh-block/images/4picture.png") height="214px").seventh-block__image
+          p.seventh-block__list-title Привлечение клиентов
+          p.seventh-block__text Помогаем продвигать клинику онлайн и офлайн, внедряем ПО для работы с клиентами
+        li.seventh-block__item
+          .seventh-block__image-block
+            img(src=require("../blocks/seventh-block/images/5picture.png"))
+          p.seventh-block__list-title Дизайн клиники
+          p.seventh-block__text Помогаем адаптировать стиль «Мила Дент» к вашему помещению
+        li.seventh-block__item
+          .seventh-block__image-block
+            img(src=require("../blocks/seventh-block/images/6picture.png"))
+          p.seventh-block__list-title Поддержка 24/7
+          p.seventh-block__text Консультируем по любым вопросам связанными с работой клиники
+    .seventh-block__form
+      .seventh-block__tablet
+      .seventh-block__form-block
+        +form-vertical(
+          'Узнайте подробности об открытии клиники и методах поддержки со стороны франчайзера',
+           'Узнать подробности о бизнесе'
+        )

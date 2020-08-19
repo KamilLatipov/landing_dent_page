@@ -1,9 +1,12 @@
 mixin header
   header.header
-    header.header__wrapper
+    .header__wrapper
       p.header__name Мила дент
       img(src=require("../blocks/header/images/logo.png")).header__logo
       .header__consultation
-        p.header__number  8 800 000 00 00
+        .header__call
+          i(class="fa fa-phone fa-lg")
+          p.header__number  8 800 000 00 00
         p.header__text Бесплатная консультация
+
 

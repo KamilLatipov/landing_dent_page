@@ -4,10 +4,13 @@ include ../blocks/first-block/first-block
 include ../blocks/second-block/second-block
 include ../blocks/third-block/third-block
 include ../blocks/fourth-block/fourth-block
-include ../blocks/fifth-block/fifth-block
 include ../blocks/header/header
 include ../blocks/sixth-block/sixth-block
 include ../blocks/eighth-block/eighth-block
+include ../blocks/seventh-block/seventh-block
+include ../blocks/nineth-block/nineth-block
+include ../blocks/tenth-block/tenth-block
+include ../blocks/footer/footer
 
 block content
     .landing-page
@@ -55,9 +58,15 @@ block content
         +third-block
       .landing-page__fourth-block.landing-page__block
         +fourth-block
-      .landing-page__fifth-block.landing-page__block
       .landing-page__sixth-block.landing-page__block
         +sixth-block
+      .landing-page__seventh-block.landing-page__block
+        +seventh-block
       .landing-page__eighth-block.landing-page__block
         +eighth-block
-
+      .landing-page__ninth-block.landing-page__block
+        +nineth-block
+      .landing-page__tenth-block.landing-page__block
+        +tenth-block
+      .landing-page__footer
+        +footer
