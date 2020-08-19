@@ -1,0 +1,59 @@
+.summary {
+  width: 450px;
+
+  margin-top: 25px;
+
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 43px 0 rgba(0, 0, 0, 0.18);
+}
+
+.summary__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 390px;
+  height: 80px;
+
+  margin-left: 30px;
+  padding: 32px 0 22px;
+
+  border-bottom : 1px solid rgba(0,0,0, 0.369);
+}
+
+.summary__text {
+  font-size: 21px;
+  color: #2d2d2d;
+}
+
+.summary__number {
+  font-size: 31px;
+  font-weight: bold;
+  color: rgb(21, 146, 146);
+}
+
+.summary__last-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 390px;
+  height: 100px;
+
+  margin-left: 30px;
+  padding: 22px 0 30px;
+}
+
+.summary__text-year {
+  font-size: 25px;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+.summary__number-year {
+  font-size: 46px;
+  line-height: 50px;
+  color: #159292;
+  font-weight: 800;
+}

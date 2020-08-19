@@ -1,0 +1,136 @@
+.third-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 50px 0;
+
+  margin-top: 46px;
+}
+
+.third-block__title {
+  width: 640px;
+
+  margin: 0 auto;
+
+  font-size: 38px;
+  text-align: center;
+}
+
+.third-block__main {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.third-block__ps {
+  margin-top: 10px;
+
+  text-align: center;
+
+  font-size: 14px;
+  color: #2d2d2d;
+}
+
+.third-block__income {
+   width: 680px;
+
+  margin-left: 12px;
+}
+
+.third-block__subtitle {
+  width: 250px;
+
+  padding: 15px 0 15px 40px;
+
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+  border-radius: 31px;
+
+  background-image: -moz-linear-gradient( 179deg, rgb(165,99,149) 0%, rgba(255,255,255,0) 100%);
+  background-image: -webkit-linear-gradient( 179deg, rgb(165,99,149) 0%, rgba(255,255,255,0) 100%);
+  background-image: -ms-linear-gradient( 179deg, rgb(165,99,149) 0%, rgba(255,255,255,0) 100%);
+
+  &--right {
+    padding: 15px 40px 15px 0;
+
+    background-image: -moz-linear-gradient( 0deg, rgb(165,99,149) 0%, rgba(255,255,255,0) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(165,99,149) 0%, rgba(255,255,255,0) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(165,99,149) 0%, rgba(255,255,255,0) 100%);
+  }
+}
+
+.third-block__expensess {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 450px;
+
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.third-block__business-plan {
+  width: 370px;
+  height: 110px;
+
+  margin-top: 30px;
+
+  align-self: center;
+}
+
+.third-block__text {
+  font-size: 30px;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+.third-block__month {
+  font-size: 30px;
+  color: #159292;
+  font-weight: bold;
+}
+
+.third-block__button {
+  position: relative;
+
+  width: 437px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: -40px;
+    right: -260px;
+
+    width: 170px;
+    height: 110px;
+
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+  }
+
+  margin-top: 30px;
+  padding: 32px 55px;
+
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 0 rgba(53, 53, 53, 0.004);
+
+  border-radius: 45px;
+  border: none;
+  outline: none;
+  background-image: -moz-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  box-shadow: 0 3px 24px 0 rgba(250, 85, 91, 0.39);
+}

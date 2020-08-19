@@ -14,7 +14,14 @@
 .landing-page__second-block {
   background-image: url("images/second.png"), url("images/table.png"),  url("images/second-background.png");
   background-position: 10% -30px, 50% 100% ,0 0;
-  background-size: 1380px 800px, 100% 200px ,cover;
+  background-size: 1380px 800px, 100% 170px ,cover;
+  background-repeat: no-repeat;
+}
+
+.landing-page__fourth-block {
+  background-image: url("images/fourth.png");
+  background-position: 0 -10px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

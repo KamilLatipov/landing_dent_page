@@ -1,0 +1,116 @@
+.eighth-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 60px 0;
+}
+
+.eighth-block__title {
+  font-size: 38px;
+}
+
+.eighth-block__table {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  border-collapse: collapse;
+
+  border: 2px solid white;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 57px 0 rgba(0, 0, 0, 0.08);
+}
+
+.eighth-block__cell {
+  width: 325px;
+  height: 58px;
+
+  font-size: 18px;
+  color: rgb(45, 45, 45);
+  font-weight: bold;
+  text-align: center;
+
+  &--round {
+    border-top-right-radius: 10px;
+  }
+
+  &--first {
+    width: 210px;
+
+    font-weight: normal;
+    text-align: start;
+
+    padding-left: 20px;
+  }
+
+  &--title {
+    width: 210px;
+
+    font-weight: normal;
+    text-align: start;
+
+    padding-left: 20px;
+
+    background-color: #e6e6e6;
+    border-top-left-radius: 10px;
+  }
+
+  &--light {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 6px 5px rgba(0, 0, 0, 0.27);
+
+    background-color: #c179af;
+  }
+
+  &--normal {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 6px 5px rgba(0, 0, 0, 0.27);
+
+    background-color: #9e5b8d;
+  }
+
+  &--dark {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 6px 5px rgba(0, 0, 0, 0.27);
+
+    background-color: #652655;
+  }
+
+  border: 1px solid rgb(197, 197, 197);
+}
+
+.eighth-block__buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+.eighth-block__button {
+  padding: 32px 25px;
+  margin-left: 40px;
+
+  font-size: 17px;
+
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(53, 53, 53, 0.004);
+
+  border-radius: 45px;
+  border: none;
+  outline: none;
+  background-image: -moz-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
+  box-shadow: 0 3px 24px 0 rgba(250, 85, 91, 0.39);
+}

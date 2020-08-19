@@ -1,0 +1,48 @@
+include ../calculator/calculator
+include ../expensess/expensess
+include ../summary/summary
+
+mixin third-block
+  section.third-block.section-block
+    .third-block__header
+      h2.third-block__title <span class="green"> Рассчитайте доходность </span> вашей стоматологической клиники
+      p.third-block__ps * данные клиники на три кресла
+    .third-block__main
+      .third-block__income
+        h5.third-block__subtitle Доход
+        +calculator(
+          'range-therapy',
+          'input-therapy',
+          '3 500',
+          '1 050 000',
+          'Терапия'
+        )
+        +calculator(
+          'range-prosthesis',
+          'input-prosthesis',
+          '5 000',
+          '1 500 000',
+          'Протезирование зубов'
+        )
+        +calculator(
+          'range-surgery',
+          'input-surgery',
+          '3 000',
+          '900 000',
+          'Хирургия'
+        )
+        +calculator(
+          'range-implant',
+          'input-implant',
+          '30 000',
+          '27 000 000',
+          'Имплантация'
+        )
+      .third-block__expensess
+        h5.third-block__subtitle.third-block__subtitle--right Затраты
+        +expensess
+        +summary
+        .third-block__business-plan
+          p.third-block__text Получите бизнес план  с выходом на прибыль
+          p.third-block__month.month-text.green 2 145 000 ₽ в месяц
+    button.third-block__button Получить бизнес план

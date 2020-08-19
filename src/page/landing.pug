@@ -2,7 +2,12 @@ extends layout.pug
 
 include ../blocks/first-block/first-block
 include ../blocks/second-block/second-block
+include ../blocks/third-block/third-block
+include ../blocks/fourth-block/fourth-block
+include ../blocks/fifth-block/fifth-block
 include ../blocks/header/header
+include ../blocks/sixth-block/sixth-block
+include ../blocks/eighth-block/eighth-block
 
 block content
     .landing-page
@@ -46,3 +51,13 @@ block content
             },
           ]
         })
+      .landing-page__third-block.landing-page__block
+        +third-block
+      .landing-page__fourth-block.landing-page__block
+        +fourth-block
+      .landing-page__fifth-block.landing-page__block
+      .landing-page__sixth-block.landing-page__block
+        +sixth-block
+      .landing-page__eighth-block.landing-page__block
+        +eighth-block
+
