@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -54,9 +55,13 @@ module.exports = {
        filename: 'index.html',
        template: './src/page/landing.pug'
      }),
-    new MiniCssExtractPlugin({
+     new MiniCssExtractPlugin({
       filename: 'main.css',
       chunkFilename: '[id].css',
+     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
     }),
   ],
   output: {

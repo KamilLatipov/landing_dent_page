@@ -1,11 +1,18 @@
-.fifth-block__picture {
-  width: 407px;
-  height: 285px;
+.fifth-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .fifth-block__gallery {
-  display: flex;
+  width: 100%;
+}
 
-  width: 1220px;
-  overflow: hidden;
+.fifth-block__picture {
+  width: 400px;
+  height: 280px;
+}
+
+.fifth-block__picture {
+  margin-left: 20px;
 }

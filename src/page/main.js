@@ -1,5 +1,6 @@
 import "../blocks/gis-win/gis-win.scss";
 import "../scss/global.scss";
+import "../scss/slick.scss";
 import "../blocks/header/header.scss";
 import "../blocks/first-block/first-block.scss";
 import "./landing.scss";
@@ -22,6 +23,7 @@ import "../blocks/seventh-block/seventh-block.scss";
 import "../blocks/nineth-block/nineth-block.scss";
 import "../blocks/tenth-block/tenth-block.scss";
 import "../blocks/footer/footer.scss";
+import "../js/slick.min";
 
 
 function calculate(rangeId, inputId, check) {
@@ -71,3 +73,14 @@ calculate('range-therapy', 'input-therapy', 3500);
 calculate('range-prosthesis', 'input-prosthesis', 5000);
 calculate('range-surgery', 'input-surgery', 3000);
 calculate('range-implant', 'input-implant', 30000);
+
+$(document).ready(function(){
+  $('.fifth-block__gallery').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+  });
+});
