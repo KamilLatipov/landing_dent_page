@@ -4,10 +4,7 @@ mixin calculator(rangeId, inputId, average, income, title)
       h3.calculator__title=title
       p.calculator__text услуги за одно кресло
       .calculator__form
-        input(type="range" max="15" min="5" step="1" id=rangeId).calculator__range
-        datalist(id="values")
-          each value in [5, 6 , 7 ,8 , 9, 10, 11, 12, 13, 14, 15]
-            option(value=`${value}` label=`${value}`).calculator__item
+        input(type="range" max="15" min="5" step="0" id=rangeId).calculator__range
         ul.calculator__scale
           each value in [5, 6 , 7 ,8 , 9]
             li.calculator__item= value

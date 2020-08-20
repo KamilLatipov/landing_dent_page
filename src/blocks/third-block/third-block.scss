@@ -132,4 +132,11 @@
   background-image: -webkit-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(250,82,89) 0%, rgb(252,131,136) 100%);
   box-shadow: 0 3px 24px 0 rgba(250, 85, 91, 0.39);
+
+  &:active {
+    background-color: rgb(187, 53, 58);
+    box-shadow: 0px 3px 24px 0px rgba(250, 85, 91, 0.39);
+
+    background-image: none;
+  }
 }

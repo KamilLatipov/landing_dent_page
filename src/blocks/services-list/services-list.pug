@@ -3,4 +3,5 @@ mixin services-list(list)
     each item in list
       li.services-list__item
         .services-list__circle
+          img(src=require(`../blocks/services-list/images/${item.link}`)).services-list__icon
         p.services-list__text=item.text

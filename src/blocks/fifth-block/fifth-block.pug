@@ -1,3 +1,5 @@
+include ../form-block/form-block
+
 mixin fifth-block
   section.fifth-block
     h2.fifth-block__title Поможем открыться в любом городе
@@ -7,3 +9,9 @@ mixin fifth-block
       img(src=require('../blocks/fifth-block/images/thirdpicture.png')).fifth-block__picture
       img(src=require('../blocks/fifth-block/images/fourthpicture.png')).fifth-block__picture
       img(src=require('../blocks/fifth-block/images/fifthpicture.png')).fifth-block__picture
+    .fifth-block__dots
+      .fifth-block__small
+      .fifth-block__big
+        .fifth-block__big-point
+      .fifth-block__small
+    +form-block('Оставьте заявку, чтобы получить план открытия', 'Получить план открытия')

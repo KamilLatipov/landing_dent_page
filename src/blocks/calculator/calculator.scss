@@ -37,12 +37,12 @@
 }
 
 .calculator__input {
-  width: 120px;
+  width: 130px;
   height: 42px;
 
   margin-top: 6px;
 
-  padding-left: 10px;
+  padding-left: 7px;
 
   font-family: "GothamPro";
   font-size: 22px;
@@ -68,18 +68,19 @@
 .calculator__scale {
   display: flex;
 
-  width: 418px;
+  width: 430px;
 
-  margin-top: 10px;
+  margin-top: 23px;
+  margin-left: 2px;
 }
 
 .calculator__item {
   position: relative;
 
-  margin-left: 33.4px;
+  margin-left: 34px;
 
   &--right {
-    margin-left: 28px;
+    margin-left: 29.3px;
   }
 
   &::before {
@@ -105,134 +106,5 @@
   }
 }
 
-@function makelongshadow($color, $size) {
-  $val: 5px 0 0 $size $color;
 
-  @for $i from 0 through 430 {
-    $val: #{$val}, -#{$i}px 0 0 $size #{$color};
-  }
-
-  @return $val;
-}
-
-.calculator__range {
-  position: relative;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-
-    top: 18px;
-    left: -2px;
-
-    width: 419px;
-    height: 14px;
-
-    border-radius: 11px;
-    border-left: 5px solid white;
-  }
-
-  overflow: hidden;
-  -webkit-appearance: none;
-
-  width: 422px;
-  min-height: 50px;
-
-  background-color: #159292;
-
-  &:focus {
-  outline: none;
-  }
-
-  &::-ms-track {
-    width: 100%;
-    height: 14px;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-  }
-
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 5px solid white;
-    height: 25px;
-    width: 25px;
-    border-radius: 15px;
-    background: #844374;
-    cursor: pointer;
-    margin-top: -9px;
-
-    box-shadow: makelongshadow(#6b2a5b, -8px);
-  }
-
-  &::-moz-range-thumb {
-    border: 5px solid white;
-    height: 25px;
-    width: 25px;
-    border-radius: 15px;
-    background: #844374;
-    cursor: pointer;
-  }
-
-  &::-ms-thumb {
-    border: 5px solid white;
-    height: 25px;
-    width: 25px;
-    border-radius: 15px;
-    background: #844374;
-    cursor: pointer;
-  }
-
-  &::-webkit-slider-runnable-track {
-    width: 415px;
-    height: 14px;
-
-    cursor: pointer;
-    background: #1c9595;
-    border-radius: 10.3px;
-    border: 3px solid white;
-  }
-
-  &::-ms-track {
-    width: 100%;
-    height: 14px;
-    cursor: pointer;
-    background: #1c9595;
-    border-color: white;
-    border-width: 2.5px 0;
-    color: transparent;
-  }
-
-  &::-moz-range-track {
-    width: 100%;
-    height: 14px;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    background: #1c9595;
-    border-radius: 13px;
-    border: 2.5px solid white;
-  }
-
-  &::-ms-fill-lower {
-    background: #702d5f;
-    border: 0.2px solid #010101;
-    border-radius: 2.6px;
-  }
-
-  &::-ms-fill-upper {
-    background: #702d5f;
-    border: 0.2px solid #010101;
-    border-radius: 2.6px;
-  }
-
-  &::-moz-range-progress {
-    background-color: #43e5f7;
-  }
-
-  &::-moz-range-track {
-   background-color: #9a905d;
-  }
-}
 

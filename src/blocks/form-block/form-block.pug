@@ -7,7 +7,9 @@ mixin form-block(title, buttonName, list)
           li.form-block__item=item.text
     form.form-block__form
       input(type="text" placeholder="Иванов Иван").form-block__input
+      .form-block__line
       input(type="text" placeholder="+7 (___) ___-__-__").form-block__input.form-block__input--center
+      .form-block__line
       input(type="email" placeholder="example@mail.ru").form-block__input
       button(type="submit").form-block__button=buttonName
     p.form-block__policy Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых <span class="green green--underline">Политикой конфиденциальности</span>

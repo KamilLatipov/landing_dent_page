@@ -25,6 +25,10 @@
 }
 
 .services-list__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 65px;
   height: 65px;
 
@@ -37,3 +41,4 @@
 .services-list__text {
   width: 130px;
 }
+
