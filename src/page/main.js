@@ -42,28 +42,28 @@ $(document).ready(function(){
 $("#range-therapy").ionRangeSlider({
   min: 5,
   max: 15,
-  from: 10,
+  from: 9,
   step: 1
 });
 
 $("#range-prosthesis").ionRangeSlider({
   min: 5,
   max: 15,
-  from: 10,
+  from: 9,
   step: 1
 });
 
 $("#range-surgery").ionRangeSlider({
-  min: 5,
-  max: 15,
-  from: 10,
+  min: 1,
+  max: 10,
+  from: 3,
   step: 1
 });
 
 $("#range-implant").ionRangeSlider({
-  min: 5,
-  max: 15,
-  from: 10,
+  min: 1,
+  max: 10,
+  from: 2,
   step: 1
 });
 
@@ -76,7 +76,7 @@ $("#range-therapy").on("change", function() {
   let gain = document.getElementsByClassName('gain');
 
   let input = document.getElementById('input-therapy');
-  let value = $inp.prop("value") * 3500 * 30 + "";
+  let value = $inp.data("from") * 3500 * 31 + "";
   value = value.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
   input.value = value + " ₽";
 
@@ -86,7 +86,7 @@ $("#range-therapy").on("change", function() {
   let implant =  parseInt(document.getElementById('input-implant').value.replace(/\s+/g, '').replace("₽", ""));
 
   let sum = 1*(therapy + prosthesis + surgery + implant) + "";
-  let totalGain = 1*(therapy + prosthesis + surgery + implant) - 1740500 + "";
+  let totalGain = Math.ceil(1*(therapy + prosthesis + surgery + implant) / 1.8867) + "";
   let yearSum = totalGain * 12 + "";
   totalGain = totalGain.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
   yearSum = yearSum.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
@@ -109,7 +109,7 @@ $("#range-prosthesis").on("change", function() {
   let gain = document.getElementsByClassName('gain');
 
   let input = document.getElementById('input-prosthesis');
-  let value = $inp.prop("value") * 5000 * 30 + "";
+  let value = $inp.data("from") * 5000 * 31 + "";
   value = value.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
   input.value = value + " ₽";
 
@@ -119,7 +119,7 @@ $("#range-prosthesis").on("change", function() {
   let implant =  parseInt(document.getElementById('input-implant').value.replace(/\s+/g, '').replace("₽", ""));
 
   let sum = 1*(therapy + prosthesis + surgery + implant) + "";
-  let totalGain = 1*(therapy + prosthesis + surgery + implant) - 1740500 + "";
+  let totalGain = Math.ceil(1*(therapy + prosthesis + surgery + implant) / 1.8867) + "";
   let yearSum = totalGain * 12 + "";
   totalGain = totalGain.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
   yearSum = yearSum.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
@@ -142,7 +142,7 @@ $("#range-surgery").on("change", function() {
   let gain = document.getElementsByClassName('gain');
 
   let input = document.getElementById('input-surgery');
-  let value = $inp.prop("value") * 3000 * 30 + "";
+  let value = $inp.data("from") * 3000 * 31 + "";
   value = value.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
   input.value = value + " ₽";
 
@@ -152,7 +152,7 @@ $("#range-surgery").on("change", function() {
   let implant =  parseInt(document.getElementById('input-implant').value.replace(/\s+/g, '').replace("₽", ""));
 
   let sum = 1*(therapy + prosthesis + surgery + implant) + "";
-  let totalGain = 1*(therapy + prosthesis + surgery + implant) - 1740500 + "";
+  let totalGain = Math.ceil(1*(therapy + prosthesis + surgery + implant) / 1.8867) + "";
   let yearSum = totalGain * 12 + "";
   totalGain = totalGain.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
   yearSum = yearSum.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
@@ -175,7 +175,7 @@ $("#range-implant").on("change", function() {
   let gain = document.getElementsByClassName('gain');
 
   let input = document.getElementById('input-implant');
-  let value = $inp.prop("value") * 30000 * 30 + "";
+  let value = $inp.data("from") * 30000 * 31 + "";
   value = value.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
   input.value = value + " ₽";
 
@@ -185,7 +185,7 @@ $("#range-implant").on("change", function() {
   let implant =  parseInt(document.getElementById('input-implant').value.replace(/\s+/g, '').replace("₽", ""));
 
   let sum = 1*(therapy + prosthesis + surgery + implant) + "";
-  let totalGain = 1*(therapy + prosthesis + surgery + implant) - 1740500 + "";
+  let totalGain = Math.ceil(1*(therapy + prosthesis + surgery + implant) / 1.8867) + "";
   let yearSum = totalGain * 12 + "";
   totalGain = totalGain.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
   yearSum = yearSum.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');

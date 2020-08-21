@@ -30,7 +30,7 @@
 }
 
 .calculator__average {
-  width: 140px;
+  width: 135px;
 
   font-size: 14px;
   color: rgb(202, 233, 233);
@@ -78,6 +78,14 @@
   position: relative;
 
   margin-left: 34px;
+
+  &--less {
+    margin-left: 40px;
+
+    &-right {
+      margin-left: 37px;
+    }
+  }
 
   &--right {
     margin-left: 29.3px;
