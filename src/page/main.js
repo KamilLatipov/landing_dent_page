@@ -63,7 +63,7 @@ $("#range-surgery").ionRangeSlider({
 $("#range-implant").ionRangeSlider({
   min: 1,
   max: 10,
-  from: 2,
+  from: 3,
   step: 1
 });
 
