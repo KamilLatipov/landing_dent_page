@@ -14,9 +14,9 @@ mixin calculator(rangeId, inputId, average, income, title, more)
         else
           ul.calculator__scale
             each value in [1, 2 , 3 , 4 , 5]
-              li.calculator__item.calculator__item--less= value
+              li.calculator__item--less= value
             each value in [6, 7, 8, 9, 10]
-              li.calculator__item.calculator__item--less-right= value
+              li.calculator__item--less.calculator__item--less-right= value
     .calculator__numbers
       label.calculator__average Средний чек:
         input(type="text" value=`${average} ₽` readonly).calculator__input
