@@ -38,7 +38,10 @@
     "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
+    "inputmask": "^5.0.5",
     "jquery": "^3.5.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "jquery.maskedinput": "^1.4.1",
     "lodash": "^4.17.15",
     "pug": "^2.0.4"
   }

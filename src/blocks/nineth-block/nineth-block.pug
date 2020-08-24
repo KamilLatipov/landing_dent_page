@@ -43,10 +43,10 @@ mixin nineth-block
           p.nineth-block__hide По франшизе — нет. Мы сопровождаем <br> партнёров во время получения всех необходимых разрешений и лицензий. Спокойно и пошаговом режиме мы совместно получим необходимые документы, чобы ваша клиника быстрее начала работу.
       .nineth-block__form
         .nineth-block__form-block
-          form.nineth-block__frm
-            textarea(placeholder="Ваш вопрос" rows="4").form-vertical__input.form-vertical__textarea
-            input(type="text" placeholder="Иванов Иван").form-vertical__input
-            input(type="text" placeholder="+7 (___) ___-__-__").form-vertical__input.form-vertical__input--center
-            input(type="email" placeholder="example@mail.ru").form-vertical__input
+          form.nineth-block__frm.form
+            textarea(placeholder="Ваш вопрос" rows="4").form-vertical__input.form-vertical__textarea.field
+            input(type="text" placeholder="Иванов Иван").form-vertical__input.field
+            input(type="text" placeholder="+7 (___) ___-__-__").form-vertical__input.form-vertical__input--center.field
+            input(type="email" placeholder="example@mail.ru").form-vertical__input.field
             button(type="submit").form-vertical__button Отправить
           p.form-vertical__policy Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых <span class="green green--underline">Политикой конфиденциальности</span>

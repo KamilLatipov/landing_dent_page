@@ -27,6 +27,39 @@ import "../blocks/footer/footer.scss";
 import "../js/slick.min";
 import "../js/ion.rangeSlider.min";
 
+let form  = document.querySelectorAll('.form');
+
+for (let i = 0; i < form.length; i++) {
+  let fields = form[i].querySelectorAll('.field');
+
+
+
+  form[i].addEventListener('submit', function (event) {
+    event.preventDefault();
+    console.log('ready');
+
+    for (let i = 0; i < fields.length; i++) {
+      fields[i].addEventListener('click', function () {
+        for (let a = 0; a < fields.length; a++) {
+          fields[a].classList.remove('empty');
+        }
+      });
+      console.log(fields[i].value);
+      if (!fields[i].value) {
+        fields[i].classList.add('empty');
+      }
+    }
+  })
+}
+
+
+let inputsTel = document.querySelectorAll('input[type="tel"]');
+
+Inputmask({
+  "mask": "+7 (999) 999-99-99",
+  showMaskOnHover: false
+}).mask(inputsTel);
+
 $(document).ready(function(){
   $('.fifth-block__gallery').slick({
     infinite: true,

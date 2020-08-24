@@ -41,3 +41,10 @@ h5 {
 button {
   cursor: pointer;
 }
+
+.empty {
+  &::placeholder {
+    color: rgba(217, 30, 24, 0.7);
+    transition: color 1s;
+  }
+}
